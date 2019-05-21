@@ -1,0 +1,36 @@
+{
+  "name": "TwoOctavesDown",
+  "time": {
+    "increment": "ms",
+    "value": 1
+  },
+  "uGens": [
+    { 
+      "name": "adc"
+    },
+    {
+      "name": "pitch",
+      "type": "PitShift",
+      "props": {
+        "mix": 1
+      },
+      "loop": {
+        "shift": 0.25
+      }
+    },
+    {
+      "name": "reverb",
+      "type": "JCRev",
+      "props": {
+        "mix": 0.03
+      }
+    },
+    {
+      "name": "safety",
+      "type": "Dyno"
+    },
+    {
+      "name": "dac"
+    }
+  ]
+}
