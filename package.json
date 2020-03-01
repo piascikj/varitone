@@ -1,20 +1,48 @@
 {
   "name": "varitone",
-  "version": "1.0.0",
-  "description": "filters for saxophone",
-  "author": "Jesse Piascik",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "audio-speaker": "^1.5.0",
-    "ear-pipe": "0.0.0",
-    "mic": "^2.1.2",
-    "mic-stream": "^1.0.2",
-    "pull-stream": "^3.6.11",
-    "speaker": "^0.4.2",
-    "stream-to-pull-stream": "^1.7.3"
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
   },
-  "license": "ISC",
-  "main": "background.js"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jest": "^24.8.0",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.32.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

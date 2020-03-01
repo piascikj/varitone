@@ -8,10 +8,13 @@
 
 ## Running a chuck program
 - Run `chuck --probe` to determine device numbers
+- adc = input
 - `chuck --adc:1 --dac:2 --out:1 --in:1 chuck/envelope.ck`
 
 # For the UI
 - [Vue CLI Plugin Electron Builder](https://nklayman.github.io/vue-cli-plugin-electron-builder/)
+- [Build a Basic CRUD App with Vue.js and Node | Okta Developer](https://developer.okta.com/blog/2018/02/15/build-crud-app-vuejs-node)
+
 
 Notes
 ----
@@ -59,3 +62,31 @@ chuck programs will be constructed from an array of shreds where
   }
 ]
 ```
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

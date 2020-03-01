@@ -1,4 +1,4 @@
-const shreds = require('./shreds')
+const shreds = require('../shreds')
 const {EOL} = require('os')
 
 function getUGens({uGens}) {
