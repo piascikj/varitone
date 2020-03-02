@@ -1,0 +1,50 @@
+keepEmptyPriority: false
+code:
+  include_lists:
+    - TODO
+    - DOING
+    - DONE
+    - PLANNING
+    - FIXME
+    - ARCHIVE
+    - HACK
+    - CHANGED
+    - XXX
+    - IDEA
+    - NOTE
+    - REVIEW
+lists:
+  - hidden: false
+    name: TODO
+  - hidden: false
+    name: DOING
+  - hidden: false
+    name: DONE
+marked:
+  gfm: true
+  tables: true
+  breaks: false
+  pedantic: false
+  smartLists: true
+  langPrefix: language-
+settings:
+  journalType: New File
+  journalPath: notes
+  taskPrefix: '#'
+  maxLines: 6
+  addNewCardsToTop: true
+  newCardSyntax: MARKDOWN
+  cards:
+    colors: []
+  doneList: DONE
+  filteredLists: []
+  journalTemplate: |
+    ---
+    computed:
+      timestamp: (new Date()).toISOString()
+    template: | # this is the card template
+      
+      <!-- created:${timestamp} -->  
+      Created: {{(new Date(created)).toLocaleString()}}  
+      File: [{{source.path}}:{{line}}]({{source.path}}:{{line}})
+    ---
