@@ -1,5 +1,7 @@
 const shreds = require('../shreds')
 const {EOL} = require('os')
+const { writeFileSync } = require('fs')
+const path = require('path')
 
 function getUGens({uGens}) {
   let out = ''
@@ -54,8 +56,10 @@ function getChuckShred(shred) {
   return out
 }
 
-shreds.forEach(shred => {
-  console.log(getChuckShred(shred))
+shreds.forEach((shred) => {
+  const dir = __dirname
+  const filePath = path.join(dir, '..', '..', 'chuck', shred.name) +'.ck'
+  writeFileSync(filePath, getChuckShred(shred))
 });
 
 // fun void octave(float shift, float pitchMix, UGen reverb) {
