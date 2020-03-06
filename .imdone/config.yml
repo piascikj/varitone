@@ -13,7 +13,11 @@ code:
     - IDEA
     - NOTE
     - REVIEW
+    - NOTES
 lists:
+  - hidden: false
+    ignore: false
+    name: NOTES
   - hidden: false
     name: TODO
   - hidden: false
@@ -28,16 +32,12 @@ marked:
   smartLists: true
   langPrefix: language-
 settings:
-  journalType: New File
-  journalPath: notes
-  taskPrefix: '#'
-  maxLines: 6
   addNewCardsToTop: true
-  newCardSyntax: MARKDOWN
   cards:
     colors: []
   doneList: DONE
   filteredLists: []
+  journalPath: notes
   journalTemplate: |
     ---
     computed:
@@ -48,3 +48,7 @@ settings:
       Created: {{(new Date(created)).toLocaleString()}}  
       File: [{{source.path}}:{{line}}]({{source.path}}:{{line}})
     ---
+  journalType: New File
+  maxLines: 6
+  newCardSyntax: MARKDOWN
+  taskPrefix: '#'

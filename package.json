@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "terminal-kit": "^1.34.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {

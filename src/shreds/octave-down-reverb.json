@@ -12,7 +12,7 @@
       "name": "pitch",
       "type": "PitShift",
       "props": {
-        "mix": 1
+        "mix": 0.90
       },
       "loop": {
         "shift": 0.5

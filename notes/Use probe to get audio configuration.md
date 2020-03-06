@@ -1,4 +1,5 @@
-# [Use probe to get audio configuration](#DOING:10)
+# [Use probe to get audio configuration](#DONE:0)
+<!-- completed:2020-03-05T00:32:03.388Z -->
 ```bash
 chuck --probe &> probe.log
 ```
