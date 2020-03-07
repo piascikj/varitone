@@ -52,8 +52,8 @@ function showDisplay (cb) {
   term.green(`Current effect: ${currentEffect}\n`)
   term.cyan( 'Choose an effect:\n' ) ;
   const chuckFilesDir = path.join(__dirname, 'chuck' )
-  let items = readdirSync(chuckFilesDir).sort((a,b) => a-b)
-  items.unshift('Quit')
+  let items = readdirSync(chuckFilesDir).filter(file => file.endsWith('.ck')).sort()
+  items.push('Quit')
   
   term.gridMenu( items , function( err , response ) {
     currentEffect = response.selectedText
